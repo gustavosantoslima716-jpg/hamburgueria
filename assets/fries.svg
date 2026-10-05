@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <path d="M 90 140 L 110 260 L 190 260 L 210 140 Z" fill="#e76f51"/>
+  <path d="M 90 140 L 210 140 L 200 110 L 100 110 Z" fill="#d90429"/>
+  <!-- Batatas -->
+  <rect x="110" y="80" width="12" height="80" rx="6" fill="#ffb703" transform="rotate(-10 110 80)"/>
+  <rect x="130" y="70" width="12" height="90" rx="6" fill="#ffb703" transform="rotate(5 130 70)"/>
+  <rect x="155" y="75" width="12" height="85" rx="6" fill="#ffb703" transform="rotate(-5 155 75)"/>
+  <rect x="175" y="85" width="12" height="75" rx="6" fill="#ffb703" transform="rotate(15 175 85)"/>
+</svg>

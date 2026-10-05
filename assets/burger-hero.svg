@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b00" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#121212" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="200" cy="200" r="180" fill="url(#bg-glow)"/>
+  <!-- Pão Superior -->
+  <path d="M 100 180 Q 200 80 300 180 Z" fill="#d27d2d"/>
+  <ellipse cx="180" cy="130" rx="4" ry="2" fill="#f5e6ca"/>
+  <ellipse cx="220" cy="125" rx="4" ry="2" fill="#f5e6ca"/>
+  <ellipse cx="200" cy="150" rx="4" ry="2" fill="#f5e6ca"/>
+  <ellipse cx="150" cy="155" rx="4" ry="2" fill="#f5e6ca"/>
+  <ellipse cx="250" cy="150" rx="4" ry="2" fill="#f5e6ca"/>
+  <!-- Queijo Derretido -->
+  <path d="M 90 185 Q 150 195 200 185 Q 250 195 310 185 L 320 205 Q 260 215 200 205 Q 140 215 80 205 Z" fill="#ffb703"/>
+  <!-- Carne (Blend) -->
+  <rect x="85" y="205" width="230" height="35" rx="12" fill="#582f0e"/>
+  <!-- Bacon -->
+  <path d="M 95 238 Q 140 248 180 238 Q 230 248 295 238" stroke="#7f4f24" stroke-width="8" fill="none"/>
+  <!-- Alface e Tomate -->
+  <path d="M 90 245 Q 200 260 310 245" stroke="#2a9d8f" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M 100 258 Q 200 270 300 258" stroke="#e76f51" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <!-- Pão Inferior -->
+  <path d="M 90 270 Q 200 260 310 270 Q 320 300 300 310 Q 200 320 100 310 Q 80 300 90 270 Z" fill="#d27d2d"/>
+</svg>

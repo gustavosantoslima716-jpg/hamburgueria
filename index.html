@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xantoss Burger | Artesanal & Irresistível</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" onclick="switchPage('home')">Xantoss<span>Burger</span></a>
+            <nav class="nav-menu">
+                <button onclick="switchPage('home')" class="nav-link active" data-target="home">Início</button>
+                <button onclick="switchPage('menu')" class="nav-link" data-target="menu">Cardápio</button>
+                <button onclick="switchPage('menu')" class="btn-nav-cta">Pedir Agora</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="app">
+        <!-- Página Home -->
+        <section id="page-home" class="page active">
+            <div class="hero">
+                <div class="container hero-content">
+                    <span class="badge">100% Angus & Pão Artesanal</span>
+                    <h1>O Verdadeiro Sabor do Hambúrguer Artesanal</h1>
+                    <p>Ingredientes frescos, carnes selecionadas e um blend secreto que vai explodir o seu paladar. Venha se apaixonar!</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="switchPage('menu')">Ver Cardápio Completo</button>
+                        <a href="#destaques" class="btn btn-secondary">Conhecer Destaques</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/burger-hero.svg" alt="Hambúrguer Xantoss Especial">
+                </div>
+            </div>
+
+            <section id="destaques" class="highlights container">
+                <h2>Nossos Favoritos</h2>
+                <p class="section-subtitle">Os campeões de pedidos da casa</p>
+                <div class="grid-cards">
+                    <div class="card">
+                        <img src="assets/burger-1.svg" alt="X-Salada Xantoss">
+                        <h3>Xantoss Classic</h3>
+                        <p>Pão brioche, blend 160g, queijo cheddar cremoso, bacon crocante, alface, tomate e molho da casa.</p>
+                        <span class="price">R$ 32,90</span>
+                        <button class="btn btn-card" onclick="switchPage('menu')">Pedir no Cardápio</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/burger-2.svg" alt="Xantoss Monster">
+                        <h3>Xantoss Monster</h3>
+                        <p>Dois blends de 160g, duplo cheddar, muito bacon em tiras, cebola caramelizada e maionese verde.</p>
+                        <span class="price">R$ 44,90</span>
+                        <button class="btn btn-card" onclick="switchPage('menu')">Pedir no Cardápio</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Página Cardápio -->
+        <section id="page-menu" class="page">
+            <div class="container">
+                <div class="menu-header">
+                    <h1>Nosso Cardápio</h1>
+                    <p>Escolha sua perdição favorita e faça seu pedido</p>
+                </div>
+
+                <div class="menu-filters">
+                    <button class="filter-btn active" onclick="filterMenu('all')">Todos</button>
+                    <button class="filter-btn" onclick="filterMenu('bovinos')">Bovinos</button>
+                    <button class="filter-btn" onclick="filterMenu('especiais')">Especiais</button>
+                    <button class="filter-btn" onclick="filterMenu('acompanhamentos')">Acompanhamentos</button>
+                </div>
+
+                <div class="grid-cards menu-grid">
+                    <div class="card" data-category="bovinos">
+                        <img src="assets/burger-1.svg" alt="Xantoss Classic">
+                        <h3>Xantoss Classic</h3>
+                        <p>Pão brioche, blend 160g, queijo cheddar, bacon, alface, tomate e molho da casa.</p>
+                        <span class="price">R$ 32,90</span>
+                        <button class="btn btn-primary" onclick="alert('Item adicionado ao pedido!')">Adicionar</button>
+                    </div>
+                    <div class="card" data-category="bovinos">
+                        <img src="assets/burger-2.svg" alt="Xantoss Monster">
+                        <h3>Xantoss Monster</h3>
+                        <p>Duplo blend 160g, duplo cheddar, muito bacon, cebola caramelizada e molho especial.</p>
+                        <span class="price">R$ 44,90</span>
+                        <button class="btn btn-primary" onclick="alert('Item adicionado ao pedido!')">Adicionar</button>
+                    </div>
+                    <div class="card" data-category="especiais">
+                        <img src="assets/burger-3.svg" alt="Xantoss Crispy Chicken">
+                        <h3>Xantoss Crispy Chicken</h3>
+                        <p>Pão australiano, sobrecoxa empanada super crocante, coleslaw e maionese picante.</p>
+                        <span class="price">R$ 36,90</span>
+                        <button class="btn btn-primary" onclick="alert('Item adicionado ao pedido!')">Adicionar</button>
+                    </div>
+                    <div class="card" data-category="especiais">
+                        <img src="assets/burger-hero.svg" alt="Xantoss Trufado">
+                        <h3>Xantoss Trufado</h3>
+                        <p>Blend 180g Angus, queijo brie maçaricado, cogumelos sautée e toque de azeite trufado.</p>
+                        <span class="price">R$ 48,90</span>
+                        <button class="btn btn-primary" onclick="alert('Item adicionado ao pedido!')">Adicionar</button>
+                    </div>
+                    <div class="card" data-category="acompanhamentos">
+                        <img src="assets/fries.svg" alt="Batata Frita Rústica">
+                        <h3>Batata Rústica com Cheddar e Bacon</h3>
+                        <p>Porção generosa de batatas rústicas temperadas, cobertas com cheddar cremoso e bacon.</p>
+                        <span class="price">R$ 26,90</span>
+                        <button class="btn btn-primary" onclick="alert('Item adicionado ao pedido!')">Adicionar</button>
+                    </div>
+                    <div class="card" data-category="acompanhamentos">
+                        <img src="assets/onion-rings.svg" alt="Onion Rings">
+                        <h3>Onion Rings Crocantes</h3>
+                        <p>Anéis de cebola empanados e crocantes acompanhados de molho barbecue artesanal.</p>
+                        <span class="price">R$ 24,90</span>
+                        <button class="btn btn-primary" onclick="alert('Item adicionado ao pedido!')">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Xantoss Burger. Todos os direitos reservados.</p>
+            <p>Feito com ❤️ para amantes de hambúrguer.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
